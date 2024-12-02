@@ -1,0 +1,537 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    text-transform: capitalize;
+}
+
+/*Barra de navegacion*/
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.container2{
+    margin-left: 20px;
+    width: 80px;
+}
+
+.content{
+    min-height: 80px;
+    background: linear-gradient(
+        90deg,
+        black,60%,
+        rgb(201, 19, 19)70%
+    );
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #dedede;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: blue;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+/*fin de barra de navegacion*/
+
+/*unidad I*/
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 900px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.card-title {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.show-panel-btn {
+    background-color: #6200ee;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+}
+
+.show-panel-btn:hover {
+    background-color: #5000ca;
+}
+
+.course-panel {
+    background: white;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    overflow: hidden;
+    margin-bottom: 230px;
+}
+
+.course-panel.active {
+    display: block;
+}
+
+.panel-header {
+    background-color: #6200ee;
+    color: white;
+    padding: 1rem;
+}
+
+.panel-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.panel-content {
+    padding: 1em;
+}
+
+.icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-header:hover {
+    background-color: #e9ecef;
+}
+
+.accordion-content {
+    padding: 1rem;
+    display: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+/*unidad I*/
+
+/*unidad II*/
+.container4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.card1 {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 900px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.card-image1 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content1 {
+    padding: 2rem;
+}
+
+.card-title1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-text1 {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.show-panel-btn1 {
+    background-color: #6200ee;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+}
+
+.show-panel-btn1:hover {
+    background-color: #5000ca;
+}
+
+.course-panel1 {
+    background: white;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    overflow: hidden;
+    margin-bottom: 230px;
+}
+
+.course-panel1.active {
+    display: block;
+}
+
+.panel-header1 {
+    background-color: #6200ee;
+    color: white;
+    padding: 1rem;
+}
+
+.panel-title1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.panel-content1 {
+    padding: 1em;
+}
+
+.icon1 {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.accordion1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion-item1 {
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.accordion-header1 {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-header1:hover {
+    background-color: #e9ecef;
+}
+
+.accordion-content1 {
+    padding: 1rem;
+    display: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.accordion-item1.active .accordion-content1 {
+    display: block;
+}
+/*unidad II*/
+
+/*unidad III*/
+.container5 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.card2 {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 900px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.card-image2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content2 {
+    padding: 2rem;
+}
+
+.card-title2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-text2 {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.show-panel-btn2 {
+    background-color: #6200ee;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+}
+
+.show-panel-btn2:hover {
+    background-color: #5000ca;
+}
+
+.course-panel2 {
+    background: white;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    overflow: hidden;
+    margin-bottom: 230px;
+}
+
+.course-panel2.active {
+    display: block;
+}
+
+.panel-header2 {
+    background-color: #6200ee;
+    color: white;
+    padding: 1rem;
+}
+
+.panel-title2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.panel-content2 {
+    padding: 1em;
+}
+
+.icon2 {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.accordion2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion-item2 {
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.accordion-header2 {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-header2:hover {
+    background-color: #e9ecef;
+}
+
+.accordion-content2 {
+    padding: 1rem;
+    display: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.accordion-item2.active .accordion-content2 {
+    display: block;
+}
+/*unidad III*/
+
+@media(max-width:991px){
+
+    .content{
+        min-height: 70px;
+    }
+
+    .content{
+        min-height: 70px;
+        margin: auto;
+    }
+
+    .logo{
+        margin-left: 80px;
+    }
+
+    .container2{
+        margin-left: 20px;
+    }
+
+    .menu{
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            90deg,
+            rgb(28, 27, 27)50%,
+            rgb(201, 19, 19)70%
+        );
+    display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .container3 {
+        margin-top: 30px;
+    }
+
+    .container4{
+        margin-top: 30px;
+    }
+
+    .container5{
+        margin-top: 30px;
+    }
+}

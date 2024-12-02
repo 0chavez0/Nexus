@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS</title>
+    <link rel="stylesheet" href="/estilos_1/CONTACTOS.css">
+    <link rel="icon" href="/img/logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!--Barra de navegacion-->
+    <header>
+        <div class="content">
+            <img class="container2" src="/img/images.ico" alt="">
+            <div class="menu container">
+                <a href="/index.html" class="logo">NEXUS</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="/img/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="/index.html">INICIO</a></li>
+                        <li><a href="TEORIA.html">TEORIA</a></li>
+                        <li><a href="PRACTICA.html">PRACTICA</a></li>
+                        <li><a href="NOSOTROS.html">NOSOTROS</a></li>
+                        <li><a href="CONTACTOs.html">CONTACTOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--fin de Barra de navegacion-->
+
+    <!--formulario-->
+
+    <section class="contact-form">
+        <div class="form-container">
+            <div class="form-left">
+                <h2>Escríbenos</h2>
+                <p>Cualquier información o consulta nos contacta para mayor información</p>
+                <form action="https://formsubmit.co/pasache23alexandro@gmail.com" method="POST" >
+                    <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+                    <input type="tel" name="numero" placeholder="Escribe tu numero de celular" required>
+                    <input type="email" name="email" placeholder="Escribe tu correo" required>
+                    <textarea name="messaje" placeholder="Escribe un mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/paginas_1/CONTACTOS.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            <div class="form-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.5425656634193!2d-75.75297552531943!3d-14.045107682320053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110fd2d2e4a8053%3A0x979e2667ad3f0901!2sUniversidad%20San%20Juan%20Bautista%20-%20Sede%20Ica!5e0!3m2!1ses!2spe!4v1730782101813!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i>Ctra. Panamericana Sur 2, Ica 11004</p>
+                    <p><i class="fas fa-phone"></i>+51 904189549</p>
+                    <p><i class="fas fa-envelope"></i>NEXUS@gmail.com</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/invites/contact/?i=ou2mz49nfjuz&utm_content=weio629"><i class="fab fa-instagram"></i></a>
+                    <a href="https://chat.whatsapp.com/KIzworMxjCcFZeDOYJbM0q"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fin de formulario-->
+
+</body>
+</html>
